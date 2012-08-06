@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#000000">
+
+
+	<!-- Header on list view -->
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" android:id="@+id/top_control_bar" >
+	</RelativeLayout>
+
+
+	<!-- Footer button on list view -->
+	<LinearLayout android:id="@+id/bottom_control_bar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" android:gravity="center_horizontal">
+		
+			<Button android:text="Add FX" android:id="@+id/fxBtn"
+				android:layout_width="80dip" android:layout_alignParentRight="true"
+				android:layout_height="wrap_content" android:background="@drawable/button_selector"
+				android:paddingTop="5dip" android:paddingBottom="5dip"
+				android:textColor="#ffffff" />		
+				
+
+				
+			<Button android:text="Save Image" android:id="@+id/saveBtn"
+				android:layout_width="80dip" android:layout_alignParentRight="true"
+				android:layout_height="wrap_content" android:background="@drawable/button_selector"
+				android:paddingTop="5dip" android:paddingBottom="5dip"
+				android:textColor="#ffffff" />	
+			
+	</LinearLayout>
+
+
+
+	<!-- editor view -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_below="@id/top_control_bar" android:layout_above="@id/bottom_control_bar"
+		android:gravity="center_horizontal">
+		
+		<ImageView 
+			android:id="@+id/captured_image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		/>		
+	</LinearLayout>
+
+		
+	<TextView android:id="@android:id/empty" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text=""
+		android:layout_below="@id/top_control_bar" android:layout_above="@id/bottom_control_bar" />
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center_horizontal"
+	android:background="@drawable/cam_bg" >
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center_horizontal">
+
+		<ImageView android:id="@+id/logo" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/cutting_logo"
+			android:paddingLeft="35dip" android:paddingRight="35dip"/>
+
+	</LinearLayout>
+
+
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:paddingTop="5dip" android:paddingBottom="5dip"
+		android:gravity="center_horizontal">
+
+		<Button android:text="Start FXing" android:id="@+id/startBtn"
+			android:layout_width="80dip" android:layout_alignParentRight="true"
+			android:layout_height="wrap_content" android:background="@drawable/button_selector"
+
+			android:paddingTop="5dip" android:paddingBottom="5dip"
+			android:textColor="#ffffff" />
+
+	</LinearLayout>
+
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:paddingTop="5dip" android:paddingBottom="5dip"
+		android:gravity="center_horizontal">
+
+		<Button android:text="Settings" android:id="@+id/settingsBtn"
+			android:layout_width="80dip" android:layout_alignParentRight="true"
+			android:layout_height="wrap_content" android:background="@drawable/button_selector"
+			android:paddingTop="5dip" android:paddingBottom="5dip"
+			android:textColor="#ffffff" />
+
+	</LinearLayout>
+	
+	
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:paddingTop="5dip" android:paddingBottom="5dip"
+		android:gravity="center_horizontal">
+
+		<Button android:text="Exit" android:id="@+id/exitBtn"
+			android:layout_width="80dip" android:layout_alignParentRight="true"
+			android:layout_height="wrap_content" android:background="@drawable/button_selector"
+			android:paddingTop="5dip" android:paddingBottom="5dip"
+			android:textColor="#ffffff" />
+
+	</LinearLayout>
+
+</LinearLayout>
